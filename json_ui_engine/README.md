@@ -106,16 +106,16 @@ A simple screen with a column, text, and a conditional button.
 
 The default registry includes:
 
-| Type | Description |
-|------|-------------|
-| `column` | Vertical layout (Flex) |
-| `row` | Horizontal layout (Flex) |
-| `stack` | Z-axis layout |
-| `text` | Renders text with style properties |
-| `image` | Renders network images |
-| `button` | Native clickable button |
-| `sized_box` | Spacer with width/height |
-| `text_input` | Form input bound to state variables |
+| Type          | Description                               |
+|---------------|-------------------------------------------|
+| `column`      | Vertical layout (Flex)                    |
+| `row`         | Horizontal layout (Flex)                  |
+| `stack`       | Z-axis layout                             |
+| `text`        | Renders text with style properties        |
+| `image`       | Renders network images                    |
+| `button`      | Native clickable button                   |
+| `sized_box`   | Spacer with width/height                  |
+| `text_input`  | Form input bound to state variables       |
 | `conditional` | Logic widget for rendering based on state |
 
 ## Forms & State Binding

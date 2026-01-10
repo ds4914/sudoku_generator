@@ -1,0 +1,19 @@
+# Files to exclude from the published package
+.idea/
+.dart_tool/
+.git/
+.github/
+.vscode/
+android/
+ios/
+linux/
+macos/
+web/
+windows/
+test/
+build/
+*.iml
+.DS_Store
+example/build/
+example/ios/
+example/android/
