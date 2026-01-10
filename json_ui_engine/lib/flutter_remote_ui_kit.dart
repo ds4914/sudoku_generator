@@ -1,4 +1,4 @@
-library flutter_remote_ui;
+library flutter_remote_ui_kit;
 
 export 'src/core/remote_ui.dart';
 export 'src/core/widget_registry.dart';

@@ -1,5 +1,5 @@
 # Flutter Remote UI
-[![pub package](https://img.shields.io/pub/v/flutter_remote_ui.svg)](https://pub.dev/packages/flutter_remote_ui)
+[![pub package](https://img.shields.io/pub/v/flutter_remote_ui_kit.svg)](https://pub.dev/packages/flutter_remote_ui_kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A production-ready Flutter package that enables fully JSON-driven, remote-configurable UIs.
@@ -21,7 +21,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_remote_ui: ^1.0.0
+  flutter_remote_ui_kit: ^1.0.0
 ```
 
 ## Quick Start
@@ -30,7 +30,7 @@ dependencies:
 In your `main.dart`, initialize the `RemoteUI` singleton with a registry. You can use `createDefaultRegistry()` to get the standard set of widgets.
 
 ```dart
-import 'package:flutter_remote_ui/flutter_remote_ui.dart';
+import 'package:flutter_remote_ui_kit/flutter_remote_ui_kit.dart';
 
 void main() {
   RemoteUI.init(

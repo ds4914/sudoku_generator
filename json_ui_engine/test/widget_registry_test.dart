@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_remote_ui/flutter_remote_ui.dart';
+import 'package:flutter_remote_ui_kit/flutter_remote_ui_kit.dart';
 
 void main() {
   test('RemoteWidgetData parses JSON correctly', () {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_remote_ui/flutter_remote_ui.dart';
+import 'package:flutter_remote_ui_kit/flutter_remote_ui_kit.dart';
 
 void main() {
   // 1. Initialize the engine with default widgets

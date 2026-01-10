@@ -1,5 +1,5 @@
-name: flutter_remote_ui_example
-description: Demonstrates how to use the flutter_remote_ui package.
+name: flutter_remote_ui_kit_example
+description: Demonstrates how to use the flutter_remote_ui_kit package.
 publish_to: 'none'
 version: 1.0.0
 
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_remote_ui:
+  flutter_remote_ui_kit:
     path: ../
 
 dev_dependencies:
