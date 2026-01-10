@@ -1,9 +1,11 @@
 # Flutter Remote UI
+
 [![pub package](https://img.shields.io/pub/v/flutter_remote_ui_kit.svg)](https://pub.dev/packages/flutter_remote_ui_kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A production-ready Flutter package that enables fully JSON-driven, remote-configurable UIs.
-Designed for server-driven UI (SDUI) in apps that require instant updates, A/B testing, and dynamic content without app store releases.
+Designed for server-driven UI (SDUI) in apps that require instant updates, A/B testing, and dynamic
+content without app store releases.
 
 ## Features
 
@@ -27,7 +29,9 @@ dependencies:
 ## Quick Start
 
 ### 1. Initialize the Engine
-In your `main.dart`, initialize the `RemoteUI` singleton with a registry. You can use `createDefaultRegistry()` to get the standard set of widgets.
+
+In your `main.dart`, initialize the `RemoteUI` singleton with a registry. You can use
+`createDefaultRegistry()` to get the standard set of widgets.
 
 ```dart
 import 'package:flutter_remote_ui_kit/flutter_remote_ui_kit.dart';
@@ -43,9 +47,12 @@ void main() {
 ```
 
 ### 2. Render a UI
-Use `RemoteUIRenderer` to fetch and render the JSON. You can load from a network URL or provide the data directly.
+
+Use `RemoteUIRenderer` to fetch and render the JSON. You can load from a network URL or provide the
+data directly.
 
 **From Network:**
+
 ```dart
 class MyScreen extends StatelessWidget {
   @override
@@ -62,10 +69,12 @@ class MyScreen extends StatelessWidget {
 ```
 
 **From Data (Direct):**
+
 ```dart
-RemoteUIRenderer.data(
-  data: RemoteWidgetData.fromJson(myJsonMap),
-  initialData: { "username": "JohnDoe" }, // Initial state variables
+RemoteUIRenderer.data
+(
+data: RemoteWidgetData.fromJson(myJsonMap),
+initialData: { "username": "JohnDoe" }, // Initial state variables
 )
 ```
 
@@ -76,13 +85,19 @@ A simple screen with a column, text, and a conditional button.
 ```json
 {
   "type": "column",
-  "style": { "padding": 16, "backgroundColor": "#FFFFFF" },
+  "style": {
+    "padding": 16,
+    "backgroundColor": "#FFFFFF"
+  },
   "children": [
     {
       "type": "text",
       "props": {
         "text": "Welcome, ${username}!",
-        "style": { "fontSize": 24, "fontWeight": "bold" }
+        "style": {
+          "fontSize": 24,
+          "fontWeight": "bold"
+        }
       }
     },
     {
@@ -90,11 +105,18 @@ A simple screen with a column, text, and a conditional button.
       "props": {
         "condition": "${cartCount} > 0",
         "true": {
-           "type": "button",
-           "props": { "label": "Checkout Now" },
-           "actions": {
-             "onTap": { "type": "navigate", "payload": { "route": "/cart" } }
-           }
+          "type": "button",
+          "props": {
+            "label": "Checkout Now"
+          },
+          "actions": {
+            "onTap": {
+              "type": "navigate",
+              "payload": {
+                "route": "/cart"
+              }
+            }
+          }
         }
       }
     }
@@ -120,21 +142,29 @@ The default registry includes:
 
 ## Forms & State Binding
 
-Widgets can bind to the local state controller using the `bind` property. 
+Widgets can bind to the local state controller using the `bind` property.
 
 ```json
 {
   "type": "text_input",
   "props": {
-    "bind": "email", 
+    "bind": "email",
     "labelText": "Email Address",
     "validators": [
-      { "rule": "required", "message": "Required" },
-      { "rule": "regex", "pattern": "^\\S+@\\S+\\.\\S+$", "message": "Invalid Email" }
+      {
+        "rule": "required",
+        "message": "Required"
+      },
+      {
+        "rule": "regex",
+        "pattern": "^\\S+@\\S+\\.\\S+$",
+        "message": "Invalid Email"
+      }
     ]
   }
 }
 ```
+
 Use `${variableName}` syntax in text or condition strings to access these values.
 
 ## Extensibility
@@ -151,14 +181,21 @@ Widget buildMyCustomWidget(BuildContext context, RemoteWidgetData data) {
 }
 
 // 2. Register it
-RemoteUI.registry.register('my_fancy_widget', buildMyCustomWidget);
+RemoteUI.registry.register
+('my_fancy_widget
+'
+, buildMyCustomWidget);
 ```
 
 Then use it in JSON:
+
 ```json
 {
   "type": "my_fancy_widget",
-  "props": { "title": "Hello", "color": "#FF0000" }
+  "props": {
+    "title": "Hello",
+    "color": "#FF0000"
+  }
 }
 ```
 
@@ -169,3 +206,18 @@ Contributions are welcome! Please check out the [example](example) directory for
 ## License
 
 MIT
+
+☕ Support the Project
+
+If Flutter Remote UI has saved you development time or helped you ship faster, consider supporting
+the project.
+
+This package is maintained in my free time, and your support helps:
+
+Improve stability & performance
+
+Add new widgets and features
+
+Maintain long-term compatibility with Flutter updates
+
+<a href="https://buymeacoffee.com/ds4914" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45" alt="Buy Me A Coffee" /> </a>
