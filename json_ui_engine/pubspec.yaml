@@ -1,6 +1,6 @@
 name: flutter_remote_ui_kit
 description: A production-ready Flutter package that enables a fully JSON-driven, remote-configurable UI system.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/ds4914/json_ui_engine
 repository: https://github.com/ds4914/json_ui_engine
 issue_tracker: https://github.com/ds4914/json_ui_engine/issues

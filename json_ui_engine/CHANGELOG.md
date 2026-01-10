@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Fix publishing issues with version conflict.
+
 ## 1.0.1
 
 - Updated package metadata with repository URLs.
