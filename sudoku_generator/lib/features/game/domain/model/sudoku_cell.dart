@@ -1,4 +1,5 @@
-import 'package:meta/meta.dart';
+
+import 'package:flutter/cupertino.dart';
 
 /// A model representing a single cell in the Sudoku grid.
 ///

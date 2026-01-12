@@ -1,4 +1,5 @@
-import 'package:meta/meta.dart';
+import 'package:flutter/cupertino.dart';
+
 import 'sudoku_cell.dart';
 
 /// Represents the complete state of a Sudoku game.
