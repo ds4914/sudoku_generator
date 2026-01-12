@@ -5,10 +5,10 @@
 enum DifficultyLevel {
   /// Easy difficulty - 30-35 cells removed.
   easy,
-  
+
   /// Medium difficulty - 40-45 cells removed.
   medium,
-  
+
   /// Hard difficulty - 50-55 cells removed.
   hard;
 

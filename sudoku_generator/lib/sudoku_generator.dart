@@ -31,7 +31,6 @@
 /// ```
 library;
 
-
 /// Exports the main game page widget.
 export 'features/game/presentation/pages/game_page.dart';
 
@@ -46,4 +45,3 @@ export 'features/game/presentation/providers/game_provider.dart';
 
 /// Exports difficulty levels.
 export 'features/game/domain/model/difficulty_level.dart';
-

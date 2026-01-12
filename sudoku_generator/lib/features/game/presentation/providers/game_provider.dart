@@ -8,7 +8,8 @@ import '../../domain/model/difficulty_level.dart';
 ///
 /// This provider manages all game logic including puzzle generation,
 /// cell selection, input validation, and mistake tracking.
-final gameProvider = NotifierProvider<GameNotifier, GameState>(GameNotifier.new);
+final gameProvider =
+    NotifierProvider<GameNotifier, GameState>(GameNotifier.new);
 
 /// A [Notifier] that manages the Sudoku game state and logic.
 ///
@@ -31,7 +32,7 @@ class GameNotifier extends Notifier<GameState> {
     // However, Notifier build() must return the state.
     // We will initialize a "loading" or empty state first,
     // and then immediately trigger a new game in the constructor logic equivalence.
-    
+
     // NOTE: In Notifier, we shouldn't trigger side effects in build().
     // But to match previous behavior where the constructor started the game:
     // We will return a default state and assume logic is called via startNewGame.
@@ -41,7 +42,7 @@ class GameNotifier extends Notifier<GameState> {
     // Best practice: Return a valid initial state.
     // The GamePage already calls startNewGame() in initState/postFrameCallback.
     // So we can simply return a clean initial state here.
-    
+
     return const GameState(maxMistakes: 3);
   }
 
@@ -86,7 +87,8 @@ class GameNotifier extends Notifier<GameState> {
       board: newBoard,
       isLoading: false,
       mistakes: 0,
-      maxMistakes: maxMistakes ?? state.maxMistakes, // Use provided or preserve setting
+      maxMistakes:
+          maxMistakes ?? state.maxMistakes, // Use provided or preserve setting
       isComplete: false,
       selectedRow: null,
       selectedCol: null,
@@ -189,4 +191,3 @@ class GameNotifier extends Notifier<GameState> {
     );
   }
 }
-

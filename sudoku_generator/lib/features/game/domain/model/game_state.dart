@@ -1,3 +1,4 @@
+import 'package:meta/meta.dart';
 import 'sudoku_cell.dart';
 
 /// Represents the complete state of a Sudoku game.
@@ -5,25 +6,26 @@ import 'sudoku_cell.dart';
 /// This class holds all the information needed to render the game UI
 /// and track the player's progress, including the board state, selected cell,
 /// mistakes count, and completion status.
+@immutable
 class GameState {
   /// The 9x9 grid of Sudoku cells representing the game board.
   final List<List<SudokuCell>> board;
-  
+
   /// The row index of the currently selected cell (0-8), or null if no cell is selected.
   final int? selectedRow;
-  
+
   /// The column index of the currently selected cell (0-8), or null if no cell is selected.
   final int? selectedCol;
-  
+
   /// The number of mistakes the player has made so far.
   final int mistakes;
-  
+
   /// The maximum number of mistakes allowed before game over.
   final int maxMistakes;
-  
+
   /// Whether the puzzle has been completed successfully.
   final bool isComplete;
-  
+
   /// Whether a new game is currently being generated.
   final bool isLoading;
 

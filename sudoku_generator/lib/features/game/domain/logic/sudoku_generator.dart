@@ -10,7 +10,7 @@ import 'dart:math';
 class SudokuGenerator {
   /// The size of the Sudoku grid (always 9 for standard Sudoku).
   static const int N = 9;
-  
+
   /// The size of each 3x3 box (square root of N).
   static const int srn = 3;
 

@@ -1,24 +1,27 @@
+import 'package:meta/meta.dart';
+
 /// A model representing a single cell in the Sudoku grid.
 ///
 /// Each cell contains a value (0-9, where 0 represents an empty cell)
 /// and various state flags for UI rendering and game logic.
+@immutable
 class SudokuCell {
   /// The numeric value of the cell (0-9, where 0 is empty).
   final int value;
-  
+
   /// Whether this cell is pre-filled and cannot be changed by the player.
   final bool isFixed;
-  
+
   /// Whether the current value creates a conflict in the Sudoku rules.
   final bool isError;
-  
+
   /// Whether this cell is currently selected by the player.
   final bool isSelected;
-  
+
   /// Whether this cell has the same value as the currently selected cell.
   /// Used for highlighting matching numbers.
   final bool isSameValue;
-  
+
   /// Notes/pencil marks for this cell (e.g., [1, 2, 3]).
   final List<int> notes;
 

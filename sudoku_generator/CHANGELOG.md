@@ -1,3 +1,6 @@
+## 1.0.5
+* Performance improvements and UI refinements.
+
 ## 1.0.4
 * Updated to use `NotifierProvider` and `Notifier` instead of the deprecated `StateNotifier` to support Riverpod 3.0.
 

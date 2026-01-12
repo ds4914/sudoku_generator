@@ -197,4 +197,19 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Support
 
-If you have any questions or issues, please file them in the [issue tracker](https://github.com/example/sudoku_generator/issues).
+If you have any questions or issues, please file them in the [issue tracker](https://github.com/ds4914/sudoku_generator/issues).
+
+
+☕ Support the Project
+
+If Sudoku Generator has saved you development time or helped you ship faster, consider supporting the project.
+
+This package is maintained in my free time, and your support helps:
+
+Improve stability & performance
+
+Add new widgets and features
+
+Maintain long-term compatibility with Flutter updates
+
+<a href="https://buymeacoffee.com/ds4914" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45" alt="Buy Me A Coffee" /> </a>
